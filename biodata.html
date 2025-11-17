@@ -2,25 +2,207 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bio-data - Shrish Rahul Hukkeri</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a> | <a href="resume.html">Resume</a>
+    <!-- Navigation -->
+    <nav class="glass-nav" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">SRH</a>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="biodata.html" class="active">Bio-data</a></li>
+                <li><a href="http://linkedin.com/in/shrish-hukkeri" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
     </nav>
-    <section>
-        <h1>Bio-data</h1>
-        <ul>
-            <li>Full Name: Shrish Rahul Hukkeri</li>
-            <li>Gender: Male</li>
-            <li>Date of Birth: 24 June, 2005</li>
-            <li>Marital Status: Single</li>
-            <li>Current Address: 103 A Block, Arvind Sowparnika, Beside Arekere Lake, Bannerghatta Main Road, Bangalore, Karnataka, 560076</li>
-            <li>Languages Known: Kannada, English, Hindi</li>
-            <li>Phone: +91-7975660668</li>
-            <li>Email: shrishrahulhukkeri23csrnsit.ac.in, 1rn23cs200.shrishrhukkerigmail.com</li>
-        </ul>
+
+    <!-- Bio-data Header -->
+    <section class="biodata-header">
+        <div class="container">
+            <div class="glass-card biodata-intro">
+                <h1>Bio-Data</h1>
+                <p>Professional and Personal Information</p>
+            </div>
+        </div>
     </section>
+
+    <!-- Bio-data Content -->
+    <section class="biodata-content">
+        <div class="container">
+            <!-- Personal Details -->
+            <div class="glass-card biodata-section">
+                <h2>Personal Details</h2>
+                <div class="biodata-grid">
+                    <div class="biodata-row">
+                        <span class="label">Full Name:</span>
+                        <span class="value">Shrish Rahul Hukkeri</span>
+                    </div>
+                    <div class="biodata-row">
+                        <span class="label">Gender:</span>
+                        <span class="value">Male</span>
+                    </div>
+                    <div class="biodata-row">
+                        <span class="label">Date of Birth:</span>
+                        <span class="value">24 June, 2005</span>
+                    </div>
+                    <div class="biodata-row">
+                        <span class="label">Age:</span>
+                        <span class="value">20 Years</span>
+                    </div>
+                    <div class="biodata-row">
+                        <span class="label">Marital Status:</span>
+                        <span class="value">Single</span>
+                    </div>
+                    <div class="biodata-row">
+                        <span class="label">Nationality:</span>
+                        <span class="value">Indian</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="glass-card biodata-section">
+                <h2>Contact Information</h2>
+                <div class="biodata-grid">
+                    <div class="biodata-row">
+                        <span class="label">Phone:</span>
+                        <span class="value">+91-7975660668</span>
+                    </div>
+                    <div class="biodata-row">
+                        <span class="label">Email:</span>
+                        <span class="value">shrishrahulhukkeri23cs@rnsit.ac.in</span>
+                    </div>
+                    <div class="biodata-row">
+                        <span class="label">Alternate Email:</span>
+                        <span class="value">1rn23cs200.shrishrhukkeri@gmail.com</span>
+                    </div>
+                    <div class="biodata-row">
+                        <span class="label">LinkedIn:</span>
+                        <span class="value"><a href="http://linkedin.com/in/shrish-hukkeri" target="_blank">linkedin.com/in/shrish-hukkeri</a></span>
+                    </div>
+                    <div class="biodata-row">
+                        <span class="label">WhatsApp:</span>
+                        <span class="value">+91-7975660668</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Address -->
+            <div class="glass-card biodata-section">
+                <h2>Current Address</h2>
+                <div class="biodata-grid">
+                    <div class="biodata-row full-width">
+                        <span class="label">Address:</span>
+                        <span class="value">103 A Block Arvind Sowparnika, Beside Arekere Lake, Arekere, Bannerghatta Main Road, Bangalore, Karnataka, India - 560076</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Languages -->
+            <div class="glass-card biodata-section">
+                <h2>Language Proficiency</h2>
+                <div class="biodata-grid">
+                    <div class="biodata-row">
+                        <span class="label">Languages Known:</span>
+                        <span class="value">Kannada, English, Hindi</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Educational Qualifications -->
+            <div class="glass-card biodata-section">
+                <h2>Educational Qualifications</h2>
+                <table class="biodata-table">
+                    <thead>
+                        <tr>
+                            <th>Degree</th>
+                            <th>Institution</th>
+                            <th>Year</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>B.E. - Computer Science</td>
+                            <td>RNS Institute of Technology</td>
+                            <td>2023 - 2027</td>
+                            <td>CGPA: 9.15 / 10</td>
+                        </tr>
+                        <tr>
+                            <td>12th (Bangalore Board)</td>
+                            <td>AECS Magnolia Maaruti Public School</td>
+                            <td>2023</td>
+                            <td>89%</td>
+                        </tr>
+                        <tr>
+                            <td>10th (CBSE)</td>
+                            <td>AECS Magnolia Maaruti Public School</td>
+                            <td>2021</td>
+                            <td>92%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Awards & Achievements -->
+            <div class="glass-card biodata-section">
+                <h2>Awards & Achievements</h2>
+                <ul class="biodata-list">
+                    <li>Winner of Smart India Hackathon 2022</li>
+                    <li>Winner Prop-24 Best Project Award</li>
+                    <li>Science Idea Tank Winner</li>
+                    <li>IoT Project Open House Winner</li>
+                    <li>Science Model Making Winner</li>
+                </ul>
+            </div>
+
+            <!-- Skills & Expertise -->
+            <div class="glass-card biodata-section">
+                <h2>Key Skills & Expertise</h2>
+                <div class="biodata-skills">
+                    <span class="skill-pill">Leadership</span>
+                    <span class="skill-pill">Teamwork</span>
+                    <span class="skill-pill">Innovation</span>
+                    <span class="skill-pill">Negotiation</span>
+                    <span class="skill-pill">Communication</span>
+                    <span class="skill-pill">Collaboration</span>
+                    <span class="skill-pill">Project Management</span>
+                    <span class="skill-pill">Creativity</span>
+                </div>
+            </div>
+
+            <!-- Declaration -->
+            <div class="glass-card biodata-section">
+                <h2>Declaration</h2>
+                <p class="declaration-text">I hereby declare that all the information provided above is true and accurate to the best of my knowledge.</p>
+                <div class="signature-section">
+                    <div class="signature-line">
+                        <p><strong>Date:</strong> November 17, 2025</p>
+                        <p><strong>Place:</strong> Bangalore</p>
+                    </div>
+                    <div class="signature-line">
+                        <p class="signature">Shrish Rahul Hukkeri</p>
+                        <p><strong>Signature</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Shrish Rahul Hukkeri. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
