@@ -2,24 +2,130 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shrish Rahul Hukkeri - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <img src="IMG_4370.jpg" alt="Shrish Rahul Hukkeri" class="profile-pic">
-        <h1>Shrish Rahul Hukkeri</h1>
-        <p>Ambitious technology enthusiast aiming to make a dent in the universe.</p>
-        <p><a href="resume.html">View Resume</a> | <a href="biodata.html">View Bio-data</a></p>
-        <p><a href="http://linkedin.com/in/shrish-hukkeri">LinkedIn Profile</a></p>
-    </header>
-    <section>
-        <h2>Quick Summary</h2>
-        <ul>
-            <li>B.E. - Computer Science Engineering (RNS Institute of Technology, CGPA 9.15/10)</li>
-            <li>Key Expertise: Leadership, Teamwork, Innovation, Negotiation, Communication, Collaboration, Project Management, Creativity</li>
-            <li>Winner of Smart India Hackathon 2022, Prop-24 Best Project Award</li>
-        </ul>
+    <!-- Navigation -->
+    <nav class="glass-nav" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">SRH</a>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="biodata.html">Bio-data</a></li>
+                <li><a href="http://linkedin.com/in/shrish-hukkeri" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="profile-image-wrapper">
+                    <img src="IMG_4370.jpg" alt="Shrish Rahul Hukkeri" class="profile-image">
+                </div>
+                <h1 class="hero-title">Shrish Rahul Hukkeri</h1>
+                <p class="hero-subtitle">B.E. - Computer Science & Engineering</p>
+                <p class="hero-tagline">Ambitious technology enthusiast, who wants to make a dent in the universe.</p>
+                <div class="hero-buttons">
+                    <a href="resume.html" class="btn-primary">View Resume</a>
+                    <a href="#contact" class="btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- Highlights Section -->
+    <section class="highlights">
+        <div class="container">
+            <div class="cards-grid">
+                <div class="glass-card highlight-card">
+                    <div class="card-icon">🎓</div>
+                    <h3>Education</h3>
+                    <p>CGPA 9.15/10</p>
+                    <span>RNSIT, Bangalore</span>
+                </div>
+                <div class="glass-card highlight-card">
+                    <div class="card-icon">🏆</div>
+                    <h3>5+ Awards</h3>
+                    <p>Smart India Hackathon Winner</p>
+                    <span>Prop-24 Best Project</span>
+                </div>
+                <div class="glass-card highlight-card">
+                    <div class="card-icon">💼</div>
+                    <h3>Projects</h3>
+                    <p>Smart School Bag</p>
+                    <span>IoT & Automation</span>
+                </div>
+                <div class="glass-card highlight-card">
+                    <div class="card-icon">📜</div>
+                    <h3>Certifications</h3>
+                    <p>14+ Certifications</p>
+                    <span>AI, Python, IoT</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="glass-card about-card">
+                <h2>About Me</h2>
+                <p>I am a passionate Computer Science Engineering student at RNS Institute of Technology with a strong academic record (CGPA 9.15/10). My expertise spans across leadership, innovation, communication, and project management.</p>
+                <p>I have won prestigious competitions including the Smart India Hackathon 2022 and the Prop-24 Best Project Award. My interests lie in IoT, automation, artificial intelligence, and creating innovative solutions that make a positive impact.</p>
+                <div class="skills-tags">
+                    <span class="skill-tag">Leadership</span>
+                    <span class="skill-tag">Innovation</span>
+                    <span class="skill-tag">Communication</span>
+                    <span class="skill-tag">Project Management</span>
+                    <span class="skill-tag">Teamwork</span>
+                    <span class="skill-tag">Creativity</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="glass-card contact-card">
+                <h2>Get In Touch</h2>
+                <div class="contact-grid">
+                    <a href="mailto:shrishrahulhukkeri23cs@rnsit.ac.in" class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <span>Email</span>
+                    </a>
+                    <a href="tel:+917975660668" class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <span>Phone</span>
+                    </a>
+                    <a href="http://linkedin.com/in/shrish-hukkeri" target="_blank" class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://wa.me/917975660668" target="_blank" class="contact-item">
+                        <div class="contact-icon">💬</div>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Shrish Rahul Hukkeri. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
