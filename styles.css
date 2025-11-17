@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f7b733, #fc4a1a);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+header, section, nav {
+    margin: 24px auto;
+    max-width: 780px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 10px;
+    padding: 24px;
+}
+.profile-pic {
+    width: 120px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 8px #888;
+}
+nav a {
+    margin: 0 6px;
+    color: #fc4a1a;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
